@@ -4,11 +4,12 @@ Il programma dovrà chiedere all'utente il numero di chilometri che vuole percor
 Elenco passaggi:
 1- permettere di inserire il numero di km
 2- permettere di inserire l'età
-3- calcolare il prezzo totale
-    3.1- calcolo il prezzo in base ai km
-    3.2- applico il relativo sconto in base all'età:
+3- definire il prezzo per km
+4- calcolare il prezzo totale
+    4.1- calcolo il prezzo in base ai km
+    4.2- applico il relativo sconto in base all'età:
         SE minorenne sconto del 20%
         SE over65 sconto del 40%
         ALTRIMENTI nessuno sconto
-4- arrotondo il risultato ai centesimi
-5- visualizzo nella pagina il risultato arrotondato
+5- arrotondo il risultato ai centesimi
+6- visualizzo nella pagina il risultato arrotondato
