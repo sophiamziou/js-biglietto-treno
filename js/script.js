@@ -13,21 +13,21 @@ const prezzo_unitario = 0.21;
     //4.2- applico il relativo sconto in base all'età:
     if(eta < 18){
         let sconto = prezzo * 0.2
-        prezzo = (prezzo - sconto).toFixed(2)
+        prezzo = prezzo - sconto
         console.log(`Il prezzo finale del biglietto é ${prezzo} $`)
     }
 
     else if(eta >= 65){
         let sconto = prezzo * 0.4
-        prezzo = (prezzo - sconto).toFixed(2)
+        prezzo = prezzo - sconto
         console.log(`Il prezzo finale del biglietto é ${prezzo} $`)
     }
 
     else{
-        prezzo = prezzo.toFixed(2)
+        prezzo = prezzo
         console.log(`Il prezzo finale del biglietto é ${prezzo} $`)
     }
 // 5- arrotondo il risultato ai centesimi (.tofixed applicato)
 // 6- visualizzo nella pagina il risultato arrotondato
 
-document.getElementById('prezzo_finale').innerHTML =  `Il prezzo del biglietto é ${prezzo} $`
+document.getElementById('prezzo_finale').innerHTML =  `Il prezzo del biglietto é ${prezzo.toFixed(2)} $`
